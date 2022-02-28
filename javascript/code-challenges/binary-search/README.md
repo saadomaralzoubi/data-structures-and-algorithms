@@ -1,0 +1,12 @@
+# binary search
+
+Write a function called BinarySearch which takes in 2 parameters: a sorted array and the search key. Without utilizing any of the built-in methods available to your language, return the index of the array’s element that is equal to the value of the search key, or -1 if the element is not in the array.
+
+## Whiteboard Process
+
+![](challenge03.png)
+
+# Approach & Efficiency
+
+i used the while loop to find the given number index then i return it .
+i used binary search method by deviding the array for two parts.
