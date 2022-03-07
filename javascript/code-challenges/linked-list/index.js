@@ -80,7 +80,7 @@ class LinkedList {
         }
         current = current.next;
       }
-      throw new Error("Exception");
+      throw new Error("error");
     }
   }
 
@@ -101,7 +101,7 @@ class LinkedList {
         }
         current = current.next;
       }
-      throw new Error("Exception!");
+      throw new Error("error");
     }
   }
 }
