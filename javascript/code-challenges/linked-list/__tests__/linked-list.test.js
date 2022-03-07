@@ -27,7 +27,7 @@ describe("Linked List", () => {
     LL.insert("A");
     LL.include("A");
     LL.include("B");
-    LL.include("c"); //not exist.
+    LL.include("c");
     expect(LL.include("A")).toBeTruthy();
     expect(LL.include("B")).toBeTruthy();
     expect(LL.include("c")).toBeFalsy();
@@ -38,5 +38,77 @@ describe("Linked List", () => {
     LL.insert("b");
     LL.insert("a");
     expect(LL.toString()).toBe("{ a } -> { b } -> { c } -> NULL");
+  });
+
+  it("add a node to the end of the linked list", () => {
+    let linkedList = new LinkedLilst();
+    let value = 7;
+    let newValue = 10;
+
+    linkedList.insert(value);
+    linkedList.append(newValue);
+
+    expect(linkedList.head.next.value).toEqual(newValue);
+  });
+  it("add multiple nodes to the end of a linked list", () => {
+    let linkedList = new LinkedLilst();
+    let value1 = 1;
+    let value2 = 2;
+    let value3 = 3;
+
+    linkedList.insert(value1);
+    linkedList.append(value2);
+    linkedList.append(value3);
+
+    expect(linkedList.head.next.next.value).toEqual(value3);
+  });
+
+  it("insert a node before a node located in the middle of a linked list", () => {
+    let linkedList = new LinkedLilst();
+    let value1 = 1;
+    let value2 = 2;
+    let value3 = 3;
+    let value4 = 4;
+    let value5 = 5;
+
+    linkedList.insert(value1);
+    linkedList.insert(value2);
+    linkedList.insert(value3);
+    linkedList.insert(value4);
+    linkedList.insertBefore(value3, value5);
+
+    expect(linkedList.head.next.value).toEqual(value5);
+  });
+
+  it(" insert a node before the first node of a linked list", () => {
+    let linkedList = new LinkedLilst();
+
+    linkedList.insert("A");
+    linkedList.insertBefore("A", "B");
+
+    expect(linkedList.head.value).toEqual("B");
+  });
+
+  it(" insert after a node in the middle of the linked list", () => {
+    let linkedList = new LinkedLilst();
+
+    linkedList.insert(1);
+    linkedList.insert(2);
+    linkedList.insert(3);
+    linkedList.insertAfter(2, 4);
+
+    expect(linkedList.toString()).toEqual(
+      "{ 3 } -> { 2 } -> { 4 } -> { 1 } -> NULL"
+    );
+  });
+
+  it("insert a node after the last node of the linked list", () => {
+    let linkedList = new LinkedLilst();
+
+    linkedList.insert(1);
+    linkedList.insert(2);
+    linkedList.insertAfter(1, 3);
+
+    expect(linkedList.head.next.next.value).toEqual(3);
   });
 });
