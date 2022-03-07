@@ -69,7 +69,7 @@ describe("Linked List", () => {
     let value2 = 2;
     let value3 = 3;
     let value4 = 4;
-    let value5 = 5;
+    let value5 = 6;
 
     linkedList.insert(value1);
     linkedList.insert(value2);
