@@ -84,9 +84,9 @@ describe("Linked List", () => {
     let linkedList = new LinkedLilst();
 
     linkedList.insert("A");
-    linkedList.insertBefore("A", "B");
+    linkedList.insertBefore("A", "C");
 
-    expect(linkedList.head.value).toEqual("B");
+    expect(linkedList.head.value).toEqual("C");
   });
 
   it(" insert after a node in the middle of the linked list", () => {
