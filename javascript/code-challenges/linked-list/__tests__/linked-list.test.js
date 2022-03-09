@@ -89,7 +89,7 @@ describe("Linked List", () => {
     expect(linkedList.head.value).toEqual("C");
   });
 
-  it(" insert after a node in the middle of the linked list", () => {
+  it(" insert after a node in the middle of linked list", () => {
     let linkedList = new LinkedLilst();
 
     linkedList.insert(1);
@@ -110,5 +110,62 @@ describe("Linked List", () => {
     linkedList.insertAfter(1, 3);
 
     expect(linkedList.head.next.next.value).toEqual(3);
+  });
+
+  it("k is bigger than the length of the linked list", () => {
+    let linkedList = new LinkedLilst();
+
+    linkedList.insert(1);
+    linkedList.insert(2);
+    linkedList.insert(3);
+    function x() {
+      linkedList.kthFromEnd(4);
+    }
+
+    expect(x).toThrow();
+  });
+
+  it("k equal to length of the list ", () => {
+    let linkedList = new LinkedLilst();
+
+    linkedList.insert(1);
+    linkedList.insert(2);
+    linkedList.insert(3);
+    function x() {
+      linkedList.kthFromEnd(3);
+    }
+
+    expect(x).toThrow();
+  });
+
+  it("k is not a positive ", () => {
+    let linkedList = new LinkedLilst();
+
+    linkedList.insert(1);
+    linkedList.insert(2);
+    linkedList.insert(3);
+    function x() {
+      linkedList.kthFromEnd(-1);
+    }
+
+    expect(x).toThrow("k not found or k is negative value");
+  });
+
+  it("the linked list  size 1", () => {
+    let linkedList = new LinkedLilst();
+    linkedList.insert(1);
+    let kValue = linkedList.kthFromEnd(0);
+    expect(kValue.value).toEqual(1);
+  });
+  it(" return the value except the end or the beginning", () => {
+    let linkedList = new LinkedLilst();
+
+    linkedList.insert(1);
+    linkedList.insert(2);
+    linkedList.insert(3);
+    linkedList.insert(4);
+    let kValue = linkedList.kthFromEnd(2);
+
+    expect(kValue.value).toEqual(3);
   });
 });
