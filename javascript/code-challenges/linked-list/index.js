@@ -104,6 +104,39 @@ class LinkedList {
       throw new Error("error");
     }
   }
+
+  kthFromEnd(k) {
+    if (k === null || k < 0) {
+      throw new Error("k not found or k is negative value");
+    }
+    let current = this.head;
+    let size = 0;
+    while (current !== null) {
+      current = current.next;
+      size++;
+    }
+
+    if (k > size - 1) {
+      throw new Error("k bigger than the ll");
+    }
+    let value = size - k - 1;
+    current = this.head;
+    while (value !== 0) {
+      current = current.next;
+      value--;
+    }
+    return current;
+  }
+
+  values() {
+    let values = [];
+    let current = this.head;
+    while (current) {
+      values.push(current.value);
+      current = current.next;
+    }
+    return values;
+  }
 }
 
 module.exports = LinkedList;
