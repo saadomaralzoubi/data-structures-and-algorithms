@@ -130,9 +130,9 @@ describe("Linked List", () => {
 
     linkedList.insert(1);
     linkedList.insert(2);
-    linkedList.insert(3);
+    linkedList.insert(4);
     function x() {
-      linkedList.kthFromEnd(3);
+      linkedList.kthFromEnd(4);
     }
 
     expect(x).toThrow();
