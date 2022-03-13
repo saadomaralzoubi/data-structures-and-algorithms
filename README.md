@@ -10,3 +10,4 @@
 | challenge04  | [mock-challenge](https://github.com/saadomaralzoubi/data-structures-and-algorithms/tree/main/javascript/code-challenges/mock-challenge) |
 | Challenge05  | [linked list](https://github.com/saadomaralzoubi/data-structures-and-algorithms/tree/main/javascript/code-challenges/linked-list)       |
 | Challenge-06 | [linked list](https://github.com/saadomaralzoubi/data-structures-and-algorithms/tree/main/javascript/code-challenges/linked-list)       |
+| challenge-08 | [linked list zip](https://github.com/saadomaralzoubi/data-structures-and-algorithms/tree/main/javascript/code-challenges/linked-list-zip) |
