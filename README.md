@@ -11,4 +11,4 @@
 | Challenge05  | [linked list](https://github.com/saadomaralzoubi/data-structures-and-algorithms/tree/main/javascript/code-challenges/linked-list)             |
 | Challenge-06 | [linked list](https://github.com/saadomaralzoubi/data-structures-and-algorithms/tree/main/javascript/code-challenges/linked-list)             |
 | challenge-08 | [linked list zip](https://github.com/saadomaralzoubi/data-structures-and-algorithms/tree/main/javascript/code-challenges/linked-list-zip)     |
-| Challenge-9  | [reverse linked list](https://github.com/saadomaralzoubi/data-structures-and-algorithms/tree/main/javascript/code-challenges/mock-callenge2 |
+| Challenge-9  | [reverse linked list](https://github.com/saadomaralzoubi/data-structures-and-algorithms/tree/main/javascript/code-challenges/mock-callenge2)   |
