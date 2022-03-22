@@ -1,10 +1,10 @@
 "use strict";
-const { stack } = require("../stacks&&queues/index");
+const { Stack } = require("../stacks&&queues/index");
 
 class pseudo {
   constructor() {
-    this.stack1 = new stack();
-    this.stack2 = new stack();
+    this.stack1 = new Stack();
+    this.stack2 = new Stack();
   }
 
   enqueue(value) {
