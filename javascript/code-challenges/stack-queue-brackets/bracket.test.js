@@ -12,6 +12,6 @@ describe("test multi Bracket Validation", () => {
   });
 
   it("return true if the bracket completed", () => {
-    expect(test("(){}[]")).toBeTruthy();
+    expect(test("(){}[s]")).toBeTruthy();
   });
 });
