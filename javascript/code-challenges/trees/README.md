@@ -16,3 +16,4 @@ The challenge asked to create a binary tree class has preorder inOrder and posto
 # whiteBoard
 
 ![](./1.png)
+![](./2.png)

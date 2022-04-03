@@ -61,6 +61,11 @@ describe(" Binary Tree ", () => {
   it("Can successfully finad a maximum value ", () => {
     expect(tree.findMaximum()).toEqual(9);
   });
+  it("Can successfully return a collection from a breadthFirst traversal", () => {
+    let expected = [1, 2, 3, 6, 4, 5, 7, 8, 9];
+    let bF = tree.breadthFirst();
+    expect(bF).toEqual(expected);
+  });
 
   it("return null if the tree is empty  ", () => {
     let newtree = new BinaryTree();
