@@ -18,3 +18,4 @@
 | Challenge-13 | [balanced brackets](https://github.com/saadomaralzoubi/data-structures-and-algorithms/tree/main/javascript/code-challenges/stack-queue-brackets) |
 | Challenge-15 | [binary-tree](https://github.com/saadomaralzoubi/data-structures-and-algorithms/tree/main/javascript/code-challenges/trees)                      |
 | Challenge-16 | [find-max-binary-tree](https://github.com/saadomaralzoubi/data-structures-and-algorithms/tree/main/javascript/code-challenges/trees)             |
+| Challenge-17 | [tree-breadth-first](https://github.com/saadomaralzoubi/data-structures-and-algorithms/tree/main/javascript/code-challenges/trees)               |

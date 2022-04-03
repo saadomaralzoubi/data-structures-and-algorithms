@@ -12,6 +12,7 @@ The challenge asked to create a binary tree class has preorder inOrder and posto
 - inOrder ---> BigO o(n^2)
 - postOrder ---> BigO o(n^2)
 - findmax ---> BigO o(n).
+- breadth-first ---> BigO o(n).
 
 # whiteBoard
 
