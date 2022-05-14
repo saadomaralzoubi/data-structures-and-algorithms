@@ -22,3 +22,4 @@
 | Challenge-18 | [fizzbuzztree](https://github.com/saadomaralzoubi/data-structures-and-algorithms/tree/main/javascript/code-challenges/fuzztree)                  |
 | Challenge-26 | [insertionSort](https://github.com/saadomaralzoubi/data-structures-and-algorithms/tree/main/javascript/code-challenges/insertionSort)            |
 | Challenge-27 | [mergesort](https://github.com/saadomaralzoubi/data-structures-and-algorithms/tree/main/javascript/code-challenges/mergesort)                    |
+| Challenge-30 | [hash-table](https://github.com/saadomaralzoubi/data-structures-and-algorithms/tree/main/javascript/code-challenges/hash-table)                  |
