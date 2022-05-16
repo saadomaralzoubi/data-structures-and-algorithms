@@ -24,4 +24,4 @@
 | Challenge-27 | [mergesort](https://github.com/saadomaralzoubi/data-structures-and-algorithms/tree/main/javascript/code-challenges/mergesort)                    |
 | Challenge-28 | [Quick-Sort](https://github.com/saadomaralzoubi/data-structures-and-algorithms/tree/main/javascript/code-challenges/Quick-Sort)                  |
 | Challenge-30 | [hash-table](https://github.com/saadomaralzoubi/data-structures-and-algorithms/tree/main/javascript/code-challenges/hash-table)                  |
-|  |
+| Challenge-31 | [repeated-word](https://github.com/saadomaralzoubi/data-structures-and-algorithms/tree/main/javascript/code-challenges/repeated-word)            |
