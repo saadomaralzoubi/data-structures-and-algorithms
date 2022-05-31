@@ -55,6 +55,30 @@ class Graph {
   getSize() {
     return this.list.size > 0 ? this.list.size : null;
   }
+  breadthFirst(start) {
+    if (this.list.size === 0) {
+      return "Graph is empty";
+    }
+    if (!this.list.has(start)) {
+      return null;
+    }
+    let queue = [];
+    let visited = new Set();
+    let current;
+    queue.push(start);
+    visited.add(start);
+    while (queue.length) {
+      let front = queue.shift();
+      current = this.getNeighbors(front);
+      current.forEach((neighbor) => {
+        if (!visited.has(neighbor.vertex)) {
+          queue.push(neighbor.vertex);
+          visited.add(neighbor.vertex);
+        }
+      });
+    }
+    return visited;
+  }
 }
 
 module.exports = { Graph, Vertex };
