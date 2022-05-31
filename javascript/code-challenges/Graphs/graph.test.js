@@ -49,4 +49,22 @@ describe("Graph test", () => {
     let newgraph = new Graph();
     expect(newgraph.getNodes().length).toBe(0);
   });
+  it(" BreadthFirst search", () => {
+    graph.addVertix(1);
+    graph.addVertix(2);
+    graph.addVertix(3);
+    graph.addVertix(4);
+    graph.addVertix(5);
+    graph.addEdge(1, 2, 5);
+    graph.addEdge(1, 3, 5);
+    graph.addEdge(2, 3, 5);
+    graph.addEdge(2, 4, 5);
+    graph.addEdge(4, 5, 5);
+    graph.addEdge(5, 3, 5);
+    expect(graph.breadthFirst(1)).toEqual(new Set([1, 2, 3, 4, 5]));
+    let Graph2 = new Graph();
+    expect(Graph2.breadthFirst("")).toEqual("Graph is empty");
+    Graph2.addVertix();
+    expect(Graph2.breadthFirst("")).toEqual(null);
+  });
 });
