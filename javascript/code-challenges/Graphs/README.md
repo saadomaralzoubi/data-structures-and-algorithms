@@ -52,3 +52,22 @@ i used while loop to keep track of the nodes that are visited.
 
 big o of time : o(n) used while loop  
  big o of space : o(n) get extara space in the memory
+
+# Depth First Traversal
+
+Depth-first search is an algorithm for traversing or searching tree or graph data structures.
+
+## Challenge
+
+Write the following method for the Graph class:
+
+- Name: Depth first
+- Arguments: Node (Starting point of search)
+- Return: A collection of nodes in their pre-order depth-first traversal order
+- Program output: Display the collection
+
+## Approach & Efficiency
+
+big O:
+time :o(n)
+space:o(n)

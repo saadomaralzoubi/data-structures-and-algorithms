@@ -79,6 +79,26 @@ class Graph {
     }
     return visited;
   }
+  depthFirst(node) {
+    const visitedNode = new Set();
+    visitedNode.add(node);
+
+    const travers = (current, visited) => {
+      visitedNode.add(current);
+      const neighbors = this.getNeighbors(current);
+      for (const neighbor of neighbors) {
+        if (!visited.has(neighbor.vertex)) {
+          travers(neighbor.vertex, visited);
+        }
+      }
+    };
+    travers(node, visitedNode);
+    let result = "";
+    for (const iterator of visitedNode) {
+      result += iterator.value + ",";
+    }
+    return result;
+  }
 }
 
 module.exports = { Graph, Vertex };
