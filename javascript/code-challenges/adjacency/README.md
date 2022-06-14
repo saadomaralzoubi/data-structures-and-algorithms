@@ -6,4 +6,5 @@ Given an adjacency matrix representation of a graph, return the adjacency list r
 ## Whiteboard Process
 
 ![](1.png)
+![](2.png)
 
